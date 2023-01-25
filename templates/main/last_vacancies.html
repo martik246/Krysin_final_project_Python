@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>{{ page.name }}</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="main">
+            <a class="logo" href="{%url 'index' %}">Директор IT-проектов</a>
+        </nav>
+    </header>
+    <div class="side bar">
+        <a href="{%url 'demand' %}">
+            <div class="component">
+                <p>Востребованность</p>
+            </div>
+        </a>
+        <a href="{%url 'geography' %}">
+            <div class="component component">
+                <p>География</p>
+            </div>
+        </a>
+        <a href="{%url 'skills' %}">
+            <div class="component">
+                <p>Навыки</p>
+            </div>
+        </a>
+        <a href="{%url 'index'%}">
+            <div class="component component">
+                <p>Главная</p>
+            </div>
+        </a>
+    </div>
+    <main>
+        <section class="vakans">
+            <h1>Последние вакансии</h1>
+            <table class="table-vakans">
+                <tr>
+                    <th>Название</th>
+                    <th>Описание</th>
+                    <th>Навыки</th>
+                    <th>Компания</th>
+                    <th>Оклад</th>
+                    <th>Регион</th>
+                    <th>Дата</th>
+                </tr>
+                {% for vacancy in vacancies %}
+                    <tr>
+                        <td>{{ vacancy.name }}</td>
+                        <td>{{ vacancy.description}}</td>
+                        <td>{{ vacancy.skills | safe }}</td>
+                        <td>{{ vacancy.employer }}</td>
+                        <td>{{ vacancy.salary }}</td>
+                        <td>{{ vacancy.area }}</td>
+                        <td>{{ vacancy.published_date }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="name">Крысин Никита Александрович</p>
+        <p class="group">РИ - 210940</p>
+    </footer>
+</body>

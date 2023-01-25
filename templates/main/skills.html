@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>{{ page.name }}</title>
+</head>
+<body>
+<header class="header">
+    <nav class="main">
+        <a class="logo" href="{%url 'index' %}">Директор IT-проектов</a>
+    </nav>
+</header>
+<div class="side bar">
+    <a href="{%url 'demand' %}">
+        <div class="component">
+            <p>Востребованность</p>
+        </div>
+    </a>
+    <a href="{%url 'geography' %}">
+        <div class="component component-flex">
+            <p>География</p>
+        </div>
+    </a>
+    <a href="{%url 'index' %}">
+        <div class="component">
+            <p>Главная</p>
+        </div>
+    </a>
+    <a href="{%url 'last_vacancies'%}">
+        <div class="component component-flex">
+            <p>Последние вакансии</p>
+        </div>
+    </a>
+</div>
+<main>
+    <section class="skills-on-year">
+        <h1>ТОП-10 навыков по годам</h1>
+        <table class="table">
+            <tr>
+                <th>№</th>
+                <th>2015</th>
+                <th>2016</th>
+                <th>2017</th>
+                <th>2018</th>
+                <th>2019</th>
+                <th>2020</th>
+                <th>2021</th>
+                <th>2022</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Управление проектами</td>
+                <td>Управление проектами</td>
+                <td>Управление проектами</td>
+                <td>Управление проектами</td>
+                <td>Управление проектами</td>
+                <td>Управление проектами</td>
+                <td>Работа в команде</td>
+                <td>Организаторские навыки</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Организаторские навыки</td>
+                <td>Организаторские навыки</td>
+                <td>Ведение переговоров</td>
+                <td>Организаторские навыки</td>
+                <td>Ведение переговоров</td>
+                <td>Организаторские навыки</td>
+                <td>Управление проектами</td>
+                <td>Работа в команде</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Работа в команде</td>
+                <td>PHP</td>
+                <td>Организаторские навыки</td>
+                <td>Работа в команде</td>
+                <td>Работа в команде</td>
+                <td>Работа в команде</td>
+                <td>Грамотная речь</td>
+                <td>Управление персоналом</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Деловая переписка</td>
+                <td>JavaScript</td>
+                <td>Работа в команде</td>
+                <td>Ведение переговоров</td>
+                <td>Организаторские навыки</td>
+                <td>Грамотная речь</td>
+                <td>Организаторские навыки</td>
+                <td>Управление проектами</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Пользователь ПК</td>
+                <td>Ведение переговоров</td>
+                <td>Управление персоналом</td>
+                <td>Деловая переписка</td>
+                <td>Грамотная речь</td>
+                <td>Деловая переписка</td>
+                <td>Деловая переписка</td>
+                <td>Грамотная речь</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Грамотная речь</td>
+                <td>HTML5</td>
+                <td>PHP</td>
+                <td>Пользователь ПК</td>
+                <td>Деловая переписка</td>
+                <td>Пользователь ПК</td>
+                <td>Ведение переговоров</td>
+                <td>Английский язык</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Поиск и привлечение клиентов</td>
+                <td>Деловая переписка</td>
+                <td>JavaScript</td>
+                <td>JavaScript</td>
+                <td>Пользователь ПК</td>
+                <td>Ведение переговоров</td>
+                <td>Пользователь ПК</td>
+                <td>Креативность</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Управление продажами</td>
+                <td>jQuery</td>
+                <td>Деловая переписка</td>
+                <td>Управление персоналом</td>
+                <td>Деловая коммуникация</td>
+                <td>Управление персоналом</td>
+                <td>Управление персоналом</td>
+                <td>Работа с большим объемом информации</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Телефонные переговоры</td>
+                <td>Git</td>
+                <td>Руководство коллективом</td>
+                <td>Грамотная речь</td>
+                <td>Деловое общение</td>
+                <td>Управление командой</td>
+                <td>Работа с большим объемом информации</td>
+                <td>Ведение переговоров</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Управление персоналом</td>
+                <td>HTML</td>
+                <td>Git</td>
+                <td>Руководство коллективом</td>
+                <td>Телефонные переговоры</td>
+                <td>Деловая коммуникация</td>
+                <td>Деловое общение</td>
+                <td>Удаленная работа</td>
+            </tr>
+        </table>
+    </section>
+    <section class="needable">
+        <img src="{{ page.graphs.all.0.image.url }}">
+    </section>
+</main>
+<footer class="footer">
+    <p class="name">Крысин Никита Александрович</p>
+    <p class="group">РИ - 210940</p>
+</footer>
+</body>
+</html>

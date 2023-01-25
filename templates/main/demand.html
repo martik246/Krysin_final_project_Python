@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>{{ page.name }}</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="main">
+            <a class="logo" href="{%url 'index' %}">Директор IT-проектов</a>
+        </nav>
+    </header>
+    <div class="side bar">
+        <a href="{%url 'index' %}">
+            <div class="component">
+                <p>Главная</p>
+            </div>
+        </a>
+        <a href="{%url 'geography' %}">
+            <div class="component component">
+                <p>География</p>
+            </div>
+        </a>
+        <a href="{%url 'skills' %}">
+            <div class="component">
+                <p>Навыки</p>
+            </div>
+        </a>
+        <a href="{%url 'last_vacancies'%}">
+            <div class="component component">
+                <p>Последние вакансии</p>
+            </div>
+        </a>
+    </div>
+    <main>
+        <section class="needable-diag">
+            <img src="{{ page.graphs.all.0.image.url }}">
+        </section>
+        <section class="needable-diag">
+            <img src="{{ page.graphs.all.1.image.url }}">
+        </section>
+        <section class="needable-diag">
+            <img src="{{ page.graphs.all.2.image.url }}">
+        </section>
+        <section class="needable-diag">
+            <img src="{{ page.graphs.all.3.image.url }}">
+        </section>
+        <section class="table">
+            <table>
+                <tr>
+                    <th>Год</th>
+                    <th>Средняя зарплата</th>
+                    <th>Средняя зарплата(Руководитель ИТ-проектов)</th>
+                    <th>Количество вакансий</th>
+                    <th>Количество вакансий(Руководитель ИТ-проектов)</th>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>57259</td>
+                    <td>66551</td>
+                    <td>9358</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>67729</td>
+                    <td>80628</td>
+                    <td>28916</td>
+                    <td>322</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>69632</td>
+                    <td>87079</td>
+                    <td>38682</td>
+                    <td>426</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>91804</td>
+                    <td>87515</td>
+                    <td>58478</td>
+                    <td>639</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>79153</td>
+                    <td>87945</td>
+                    <td>70559</td>
+                    <td>817</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>75569</td>
+                    <td>104794</td>
+                    <td>87249</td>
+                    <td>1201</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>86650</td>
+                    <td>107316</td>
+                    <td>54116</td>
+                    <td>625</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>102513</td>
+                    <td>148280</td>
+                    <td>17030</td>
+                    <td>218</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="name">Крысин Никита Александрович</p>
+        <p class="group">РИ - 210940</p>
+    </footer>
+</body>
+</html>
